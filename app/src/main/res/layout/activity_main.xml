@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.abdik.helloworld.MainActivity">
+
+    <TextView
+        android:id="@+id/textBox"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:textStyle="italic"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_above="@+id/sadButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="42dp"
+        android:text="How am I feeling?"
+        />
+
+
+    <ImageButton
+        android:id="@+id/sadButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/okButton"
+        android:layout_marginLeft="29dp"
+        android:layout_marginStart="29dp"
+        app:srcCompat="@drawable/sadface"
+        android:background="#FFF"/>
+
+    <ImageButton
+        android:id="@+id/okButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/happyButton"
+        android:layout_centerHorizontal="true"
+        android:background="#FFF"
+        app:srcCompat="@drawable/okface" />
+
+    <ImageButton
+        android:id="@+id/happyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="46dp"
+        android:layout_marginRight="46dp"
+        app:srcCompat="@drawable/happyface"
+        android:background="#FFF"/>
+
+    <ImageButton
+        android:id="@+id/furiousButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/panicButton"
+        android:layout_toEndOf="@+id/textSad"
+        android:layout_toRightOf="@+id/textSad"
+        android:background="#FFF"
+        app:srcCompat="@drawable/emoji_1f621" />
+
+    <TextView
+        android:id="@+id/textFurious"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/sadButton"
+        android:layout_alignStart="@+id/sadButton"
+        android:layout_below="@+id/furiousButton"
+        android:text="FURIOUS!"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textSad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sadButton"
+        android:text="Sad"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textPanic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/panicButton"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="PANIC!"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/panicButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/happyButton"
+        android:layout_alignStart="@+id/happyButton"
+        android:layout_below="@+id/textSad"
+        android:layout_marginTop="20dp"
+        android:background="#FFF"
+        app:srcCompat="@drawable/emoji_1f637" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textBox"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/tenor" />
+
+
+</RelativeLayout>
